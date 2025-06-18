@@ -4,89 +4,89 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 216 67PERCENT 98PERCENT; /* Light Mode Background: #F9FAFB */
+    --foreground: 215 28PERCENT 17PERCENT; /* Light Mode Text: #1F2937 */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0PERCENT 100PERCENT; /* Light Mode Card BG: #FFFFFF */
+    --card-foreground: 215 28PERCENT 17PERCENT; /* Light Mode Card Text: #1F2937 */
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0PERCENT 100PERCENT; /* Light Mode Popover BG: #FFFFFF */
+    --popover-foreground: 215 28PERCENT 17PERCENT; /* Light Mode Popover Text: #1F2937 */
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 217 80PERCENT 50PERCENT; /* Light Mode Primary: #2563EB */
+    --primary-foreground: 0 0PERCENT 100PERCENT; /* Light Mode Primary Text: #FFFFFF */
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 215 60PERCENT 95PERCENT; /* Light Mode Secondary BG */
+    --secondary-foreground: 215 28PERCENT 17PERCENT; /* Light Mode Secondary Text */
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 216 50PERCENT 96.5PERCENT; /* Light Mode Muted BG: #F0F3F9 */
+    --muted-foreground: 215 14PERCENT 47PERCENT; /* Light Mode Muted Text: #6B7280 */
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 158 70PERCENT 35PERCENT; /* Light Mode Accent: #10956A */
+    --accent-foreground: 0 0PERCENT 100PERCENT; /* Light Mode Accent Text: #FFFFFF */
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 84.2PERCENT 60.2PERCENT;
+    --destructive-foreground: 0 0PERCENT 100PERCENT;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 215 25PERCENT 85PERCENT; /* Light Mode Border: Lighter Gray */
+    --input: 215 25PERCENT 85PERCENT; /* Light Mode Input BG: Lighter Gray */
+    --ring: 217 80PERCENT 50PERCENT; /* Light Mode Focus Ring: Primary Color */
 
-    --radius: 0.5rem;
+    --radius: 0.375rem; /* 6px */
 
-    --sidebar-background: 0 0% 98%;
+    /* Sidebar Light Theme */
+    --sidebar-background: 216 60PERCENT 97PERCENT;
+    --sidebar-foreground: 215 28PERCENT 17PERCENT;
+    --sidebar-primary: 217 80PERCENT 50PERCENT;
+    --sidebar-primary-foreground: 0 0PERCENT 100PERCENT;
+    --sidebar-accent: 217 80PERCENT 55PERCENT;
+    --sidebar-accent-foreground: 0 0PERCENT 100PERCENT;
+    --sidebar-border: 215 25PERCENT 85PERCENT;
+    --sidebar-ring: 217 80PERCENT 50PERCENT;
 
-    --sidebar-foreground: 240 5.3% 26.1%;
-
-    --sidebar-primary: 240 5.9% 10%;
-
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Typography */
+    --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-mono: "Fira Code", "JetBrains Mono", "Source Code Pro", ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
-    --foreground: 210 40% 98%;
+    --background: 220 27PERCENT 11PERCENT; /* Dark Mode Background: #111827 */
+    --foreground: 215 33PERCENT 91PERCENT; /* Dark Mode Text: #E5E7EB */
 
-    --card: 222.2 84% 4.9%;
-    --card-foreground: 210 40% 98%;
+    --card: 215 39PERCENT 17PERCENT; /* Dark Mode Card BG: #1E293B */
+    --card-foreground: 215 33PERCENT 91PERCENT; /* Dark Mode Card Text: #E5E7EB */
 
-    --popover: 222.2 84% 4.9%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 215 39PERCENT 17PERCENT; /* Dark Mode Popover BG: #1E293B */
+    --popover-foreground: 215 33PERCENT 91PERCENT; /* Dark Mode Popover Text: #E5E7EB */
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 217 80PERCENT 65PERCENT; /* Dark Mode Primary: #5D93F2 (Lighter Blue) */
+    --primary-foreground: 220 30PERCENT 10PERCENT; /* Dark Mode Primary Text: Dark Blue/Black */
 
-    --secondary: 217.2 32.6% 17.5%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 215 25PERCENT 25PERCENT; /* Dark Mode Secondary BG */
+    --secondary-foreground: 215 33PERCENT 91PERCENT; /* Dark Mode Secondary Text */
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 215 25PERCENT 25PERCENT; /* Dark Mode Muted BG */
+    --muted-foreground: 216 15PERCENT 65PERCENT; /* Dark Mode Muted Text: #9CA3AF */
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 160 70PERCENT 55PERCENT; /* Dark Mode Accent: #31D4A0 (Lighter Teal) */
+    --accent-foreground: 160 50PERCENT 10PERCENT; /* Dark Mode Accent Text: Dark Teal */
 
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive: 0 70PERCENT 50PERCENT;
+    --destructive-foreground: 0 0PERCENT 100PERCENT;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
-    --sidebar-background: 240 5.9% 10%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 224.3 76.3% 48%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 240 3.7% 15.9%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 240 3.7% 15.9%;
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    --border: 215 20PERCENT 30PERCENT; /* Dark Mode Border: Darker Gray */
+    --input: 215 20PERCENT 30PERCENT; /* Dark Mode Input BG: Darker Gray */
+    --ring: 217 80PERCENT 65PERCENT; /* Dark Mode Focus Ring: Dark Primary Color */
+
+    /* Sidebar Dark Theme */
+    --sidebar-background: 220 25PERCENT 15PERCENT;
+    --sidebar-foreground: 215 33PERCENT 91PERCENT;
+    --sidebar-primary: 217 80PERCENT 65PERCENT;
+    --sidebar-primary-foreground: 220 30PERCENT 10PERCENT;
+    --sidebar-accent: 217 80PERCENT 70PERCENT;
+    --sidebar-accent-foreground: 220 30PERCENT 10PERCENT;
+    --sidebar-border: 215 20PERCENT 30PERCENT;
+    --sidebar-ring: 217 80PERCENT 65PERCENT;
   }
 }
 
@@ -96,6 +96,11 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+  }
+
+  code,
+  pre {
+    @apply font-mono;
   }
 }
